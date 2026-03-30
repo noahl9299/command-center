@@ -12,7 +12,6 @@ body{font-family:Inter,system-ui,sans-serif;background:#233037;display:flex;alig
 .spinner{width:40px;height:40px;border:4px solid rgba(255,255,255,0.2);border-top-color:#e1342e;border-radius:50%;animation:spin 0.8s linear infinite;margin:0 auto 16px}
 @keyframes spin{to{transform:rotate(360deg)}}
 .error{color:#e1342e;margin-top:12px}
-iframe{position:fixed;top:0;left:0;width:100vw;height:100vh;border:none;z-index:9999}
 </style>
 </head>
 <body>
@@ -23,7 +22,7 @@ iframe{position:fixed;top:0;left:0;width:100vw;height:100vh;border:none;z-index:
 </div>
 <script>
 var SB='https://cmhpzgozurvvvhkdnuwz.supabase.co';
-var AK='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNtaHB6Z296dXJ2dnZoa2RudXd6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDMzNTU2MTUsImV4cCI6MjA1ODkzMTYxNX0.tQgphVsPaLbmjuHfm_WNRw71J9bEhJaHxzSxLNjQxMA';
+var AK='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNtaHB6Z296dXJ2dnZoa2RudXd6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ3MzM5NjMsImV4cCI6MjA5MDMwOTk2M30.uh75d3JVGB3vhjxHNLr9IMCrQadZdYYZHB3vyTSN7nM';
 fetch(SB+'/rest/v1/dashboard_html?id=eq.1&select=content',{
 headers:{apikey:AK,'Accept':'application/json'}
 })
